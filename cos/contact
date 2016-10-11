@@ -9,7 +9,7 @@
 	<META http-equiv="Content-Type" content="text/html; charset=EUC-JP">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link  type="text/css" rel="stylesheet"  href="css/style.css" media="screen" title="Main Style"/>
-<!-----------------------------------------------------------Scroll------------------------------------------------------------------->
+		<!--Scroll-->
 		<style type="text/css" id="page-css">
 			/* Styles specific to this particular page */
 			.scroll-pane
