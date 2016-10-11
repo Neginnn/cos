@@ -1,0 +1,135 @@
+<!doctype html>
+<!--
+	Name: Negin													 
+-->
+
+<html>
+<head>
+<title>Cosmetic</title>
+	<META http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link  type="text/css" rel="stylesheet"  href="css/style.css" media="screen" title="Main Style"/>
+<!-----------------------------------------------------------Scroll------------------------------------------------------------------->
+		<style type="text/css" id="page-css">
+			/* Styles specific to this particular page */
+			.scroll-pane
+			{
+				width: 100%;
+				height: 340px;
+				overflow: auto;
+			}
+			.horizontal-only
+			{
+				height: auto;
+				max-height: 200px;
+			}
+		</style>
+
+		<script type="text/javascript" id="sourcecode">
+			$(function()
+			{
+				$('.scroll-pane').jScrollPane();
+			});
+		</script>
+		
+		
+<script>
+
+window.onload=function()
+{
+	document.forms[0].elements[0].focus(); 
+
+	document.forms[0].onsubmit=function(){
+	
+		for(i = 0; i < document.forms[0].elements.length; i++)
+		{
+			e = document.forms[0].elements[i];
+
+			if(e.className.indexOf("required") != -1)
+			{
+				if(e.value.length < 1)
+				{
+					alert('missing required field');
+					e.focus();
+					e.style.backgroundColor = '#adff1a';
+
+					return false; 
+				}
+			}
+
+
+		}
+	}
+}
+
+</script>
+	
+
+
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+<script 
+src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js">
+</script>
+
+<script>
+	$(document).ready(function(){
+		$('form').validate();
+	});
+</script>	
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+ <div id="content">
+ 
+ 
+ 
+ <nav>
+  <ul>
+  	<li><a href="about.html"><img alt="" src="images/menu1.png" onmouseover="src='images/menu1h.png'" onmouseout="src='images/menu1.png'" style="border-style: none"/></a></li>
+  	<li><a href="product.html"><img alt="" src="images/menu2.png" onmouseover="src='images/menu2h.png'" onmouseout="src='images/menu2.png'" style="border-style: none"/></a></li>
+  	<li><a href="contact.html" class="current"><img alt="" src="images/menu3.png" onmouseover="src='images/menu3h.png'" onmouseout="src='images/menu3.png'" style="border-style: none"/></a></li>
+	</ul>
+ </nav>
+ 
+ 
+ <div id="main">
+		<header>
+		<h2><a href="index.html"><img src="images/logom.png" style="border-style: none" alt="" /></a></h2>
+		</header>
+		<div class="scroll-pane">
+	<div class="content-detail-page">
+                          
+                          <div class="contact-content" >  
+                            <div class="content-left">
+                                <p>Have a question for us<span class="purple">?</span></br>
+								Fill up this form and we will get to you as soon as possible.</p>
+                            </div>
+                            
+                            <div class="content-right">
+                                <form action="whatever.php">
+                                   <div class="form-label" />Name:</div>
+									<input class="required" type="text" name="u" id="u">
+									<div class="form-label" >Email Address:</div>
+									<input class="email required" type="text" name="e" id="e">
+									<div class="form-label">Query:</div>
+									<textarea name="query"></textarea>
+                                    <div class="clear"></div>
+									<button type="submit">Send</button>
+                                </form>
+                            </div>
+                            <div class="clear"></div>
+                          </div>
+                        </div>
+		</div>
+ </div>
+ 
+ <footer>
+	<hr/>Design By Negin Niamir - 2013
+ </footer>
+ 
+ </div>
+</body>
+</html>
