@@ -1,0 +1,44 @@
+<!doctype html>
+<!--
+	Name: Negin													 
+-->
+
+<html>
+<head>
+<title>Cosmetic</title>
+	<META http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link  type="text/css" rel="stylesheet"  href="css/style.css" media="screen" title="Main Style"/>
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+ <div id="content">
+ 
+ 
+ 
+ <nav>
+  <ul>
+  	<li><a href="about.html"><img alt="" src="images/menu1.png" onmouseover="src='images/menu1h.png'" onmouseout="src='images/menu1.png'" style="border-style: none"/></a></li>
+  	<li><a href="product.html"><img alt="" src="images/menu2.png" onmouseover="src='images/menu2h.png'" onmouseout="src='images/menu2.png'" style="border-style: none"/></a></li>
+  	<li><a href="contact.html"><img alt="" src="images/menu3.png" onmouseover="src='images/menu3h.png'" onmouseout="src='images/menu3.png'" style="border-style: none"/></a></li>
+	</ul>
+ </nav>
+ 
+ 
+ <div id="main">
+		<header>
+		<h1><a href="index.html"><img src="images/logo.png" style="border-style: none" alt=""/></a></h1>
+		</header>
+ 
+ 
+ </div>
+ 
+ <footer>
+	<hr/>Design By Negin Niamir - 2013
+ </footer>
+ 
+ </div>
+</body>
+</html>
